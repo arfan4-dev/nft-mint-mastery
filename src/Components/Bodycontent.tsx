@@ -65,14 +65,13 @@ const MainPage: React.FC = () => {
               justifyContent={isSmallScreen ? "center" : "start"}
               mb={2}
             >
-              {/* Updated Box component */}
-              <Box>
+              <Box mr={1}>
                 <Button
                   variant="contained"
                   href="#"
                   sx={{
-                    width: 200,
-                    background: "#112a25",
+                    width: 150,
+                    background: "#13362d",
                     color: "white",
                     "&:hover": {
                       background: "#f5f5f5",
@@ -81,16 +80,41 @@ const MainPage: React.FC = () => {
                     "&:focus": {
                       outline: "2px solid #9376E0",
                     },
-                    outline: "2px solid black",
+                    borderRadius: "20px",
                     boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.1)",
-                    fontSize: isSmallScreen ? "0.9rem" : "1rem",
+                    fontSize: isSmallScreen ? "0.7rem" : "0.9rem",
                     marginBottom: "20px",
+                    padding: "8px 16px", // Added padding
                   }}
                 >
-                  mint now
+                  MINT NFT
                 </Button>
               </Box>
-              <Box ml={isSmallScreen ? 0 : 2} />
+              <Box mr={1}>
+                <Button
+                  variant="contained"
+                  href="#"
+                  sx={{
+                    width: 150,
+                    background: "#071612",
+                    color: "white",
+                    "&:hover": {
+                      background: "#f5f5f5",
+                      color: "black",
+                    },
+                    "&:focus": {
+                      outline: "2px solid #9376E0",
+                    },
+                    borderRadius: "20px",
+                    boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.1)",
+                    fontSize: isSmallScreen ? "0.7rem" : "0.9rem",
+                    marginBottom: "20px",
+                    padding: "8px 16px", // Added padding
+                  }}
+                >
+                  LEARN MORE
+                </Button>
+              </Box>
             </Box>
           </Box>
         </Grid>
