@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from "next/image";
 import {
   Typography,
   Button,
@@ -39,7 +40,7 @@ const MainPageTwo: React.FC = () => {
       <Grid container spacing={2} >
         <Grid item xs={8} md={6} mr={15}>
           <Box textAlign="right">
-            <img
+            <Image
               src="https://uxdn6dtijsctqzcsopj5nerpyyjqxjaxfjd72aswyoqjfc3u3hiq.arweave.net/pcbfDmhMhThkUnPT1pIvxhMLpBcqR_0CVsOgkot02dE?ext=gif"
               alt="/"
               width={isSmallScreen ? "90%" : "70%"}

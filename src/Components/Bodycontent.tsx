@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+
 import {
   Typography,
   Button,
@@ -120,7 +122,7 @@ const MainPage: React.FC = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Box textAlign="center">
-            <img
+            <Image
               src="https://rent.cardinal.so/logos/atom-hero.jpg"
               alt="/"
               width={isSmallScreen ? "80%" : "100%"}

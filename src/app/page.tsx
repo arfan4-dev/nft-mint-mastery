@@ -4,7 +4,6 @@ import styles from "./page.module.css";
 import NavBar from "@/Components/NavBar";
 import MainPage from "@/Components/Bodycontent";
 import MainPageTwo from "@/Components/BodycontentTow";
-import MainPageThree from "@/Components/BodyContentTwo";
 import Footer from "@/Components/Footer";
 import { useEffect } from "react";
 
@@ -23,7 +22,6 @@ export default function Home() {
       <NavBar />
       <MainPage />
       <MainPageTwo />
-      {/* <MainPageThree/> */}
       <Footer />
     </div>
   );
