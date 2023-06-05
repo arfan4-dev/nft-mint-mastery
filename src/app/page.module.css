@@ -1,6 +1,9 @@
 .container {
   background: linear-gradient(#112823, #112B26, #0b0b0b);
 }
+/* body {
+  background:linear-gradient(to right,#112823, #112B26); 
+} */
 
 .main {
   display: flex;

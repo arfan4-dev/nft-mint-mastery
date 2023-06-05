@@ -44,14 +44,7 @@ const NavBar = () => {
             <Image
               src={logo}
               alt="Logo"
-              width={
-                isCustomSize
-                  ? 80
-                  : isXSmallScreen
-                  ? 100
-                  : isSmallScreen
-                  ? 120
-                  : 200
+              width={   isCustomSize ? 70: isXSmallScreen ? 100 : isSmallScreen ? 120 : 200
               }
               height={
                 isCustomSize

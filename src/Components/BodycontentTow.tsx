@@ -35,7 +35,7 @@ const MainPageTwo: React.FC = () => {
       sx={{
         bgcolor: "linear-gradient(#ffffff, #d3d3d3, #ffffff)",
         py: 4,
-        marginBottom: "100px", // add marginBottom here
+        marginBottom: "80px", // add marginBottom here
       }}
     >
       <Grid container spacing={2} >
@@ -44,27 +44,27 @@ const MainPageTwo: React.FC = () => {
             <img
               src={logo}
               alt="/"
-              width={isSmallScreen ? "90%" : "70%"}
-              height="360px"
+              width={isSmallScreen ? "95%" : "60%"}
+              height="260px"
               style={{
                 borderRadius: "20px",
                 border:'10px solid white',
-                marginTop: isSmallScreen ? "10px" : 0,
-                marginBottom: isSmallScreen ? "10px" : 0,
-                marginLeft: isSmallScreen ? "60px" : "",
+                // marginTop: isSmallScreen ? "2px" : 0,
+                // marginBottom: isSmallScreen ? "2px" : 0,
+                marginLeft: isSmallScreen ? "65px" : "",
                 maxWidth: "640px",
                 maxHeight: "500px",
               }}
             />
           </Box>
         </Grid>
-        <div className="col-md-3 col-sm-3" style={{marginTop: isSmallScreen ? "90px" : "30px", justifyContent: isSmallScreen ? '' : "center"}}>
-  <div style={{backgroundColor: "white", width: '310px', height: "150px", textAlign: "center", borderRadius: '10px', marginLeft: isSmallScreen ? "50px" : ""}}>
+        <div className="col-md-3 col-sm-3" style={{marginTop: isSmallScreen ? "50px" : "30px", justifyContent: isSmallScreen ? '' : "center"}}>
+  <div style={{backgroundColor: "white", width: '310px', height: "120px", textAlign: "center", borderRadius: '10px', marginLeft: isSmallScreen ? "40px" : ""}}>
     <div className="content text-center" style={{fontSize: '1rem', marginTop: '20px'}}>
-      <div style={{color: '#102420'}}>
-        <Button style={{fontSize: '1.5rem', marginTop: '20px',color: '#102420'}} onClick={decrementHandler}>-</Button> 
+      <div style={{color: '#102420',marginTop: '20px'}}>
+        <Button style={{fontSize: '1.5rem' ,color: '#102420'}} onClick={decrementHandler}>-</Button> 
         <span style={{fontWeight: 'bold', fontSize: '30px'}}> {count}</span> 
-        <Button style={{fontSize: '1.5rem', marginTop: '20px',color: '#102420'}} onClick={incrementHandler}>+</Button>
+        <Button style={{fontSize: '1.5rem', color: '#102420'}} onClick={incrementHandler}>+</Button>
       </div>
       <div>
         <Button
@@ -85,7 +85,7 @@ const MainPageTwo: React.FC = () => {
             outline: "1px solid black",
             boxShadow: "0px 0px 4px rgba(0, 0, 0, 0.1)",
             fontSize: isSmallScreen ? "0.9rem" : "1rem",
-            marginTop: "20px",
+            marginTop: "10px",
           }}
         >
           MINT NOW
@@ -93,7 +93,7 @@ const MainPageTwo: React.FC = () => {
       </div>
     </div>
   </div>
-  <div style={{textAlign: "center", fontSize: '1.5rem', color: "white",marginLeft: isSmallScreen ? "50px" : ""}}>
+  <div style={{textAlign: "center", fontSize: '1.5rem', color: "white",marginLeft: isSmallScreen ? "50px" : "",marginTop:'10px'}}>
     <strong>4999/4999 minted</strong> <br />
     <strong>Sold Out!</strong>
   </div>
